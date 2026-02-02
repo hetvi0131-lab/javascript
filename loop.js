@@ -108,9 +108,29 @@ let d = "Hello";
 //     console.log(a);
 // }
 
-for (let A = 1; A<= 10; A++)  {
-    if(A >= 5) {
-        continue;
-    }
-    console.log("Loop That Skip Numbers :" , A);
+// for (let A = 1; A<= 10; A++)  {
+//     if(A >= 5) {
+//         continue;
+//     }
+//     console.log("Loop That Skip Numbers :" , A);
+// }
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log(i);
+// }
+
+// let i = 10;
+// while (i >= 1) {
+//     console.log(i);
+//     i--;
+// }
+
+// for(let i=1; i<=20; i++){
+//     if(i%2 ===0){
+//     console.log(i);
+//     }
+//   }
+
+  for (let i = 2; i <= 20; i += 2) {
+    console.log(i);
 }

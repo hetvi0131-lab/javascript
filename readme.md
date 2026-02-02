@@ -359,3 +359,35 @@ Reason: count-- post-decrement hai — condition me 5 compare hua jo match ho ga
 <p>paper - rock --> paper</P>
 <p>scissors - paper --> scissors</P>
 <div>
+
+
+<!-- task-5 -->
+
+
+<div>
+<h1>Example 1:</h1>
+<p>Print number from 1 to 10 using a for loop.</p>
+<p>for (let i = 1; i <= 10; i++) {
+    console.log(i);
+     }</p>
+</div>
+
+<div>
+<h1>Example 2:</h1>
+<p>Print number from 10 to 1 using while loop.</p>
+<p>let i = 10;
+    while (i >= 1) {
+    console.log(i);
+    i--;
+     }</p>
+</div>
+
+<div>
+<h1>Example 3:</h1>
+<p>Print even numbers from 1 to 20 using for loop.</p>
+<p>for(let i=1; i<=20; i++){
+    if(i%2 ===0){
+    console.log(i);
+    }
+}</p>
+</div>
