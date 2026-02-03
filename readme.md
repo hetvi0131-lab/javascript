@@ -391,3 +391,143 @@ Reason: count-- post-decrement hai — condition me 5 compare hua jo match ho ga
     }
 }</p>
 </div>
+
+
+<!-- task-6 -->
+
+
+## Function Examples
+<hr>
+<div>
+<h1> Example 1: </h1>
+<p>What's the difference between function declaration and function expression in terms of hoisting?</p>
+<p> Function declarations are hoisted and can be called before definition.
+    Function expressions are not hoisted, so they cannot be called before definition.
+</p>
+</div>
+
+<div>
+<h1> Example 2: </h1>
+<p>greet();</p>
+<p>function greet(){
+    console.log("Hello!");
+}</p>
+<p>Ans or Err and Why</p>
+<p> No Error 
+    because function declaration used </p>
+</div>
+
+<div>
+<h1> Example 3: </h1>
+<p>Convert normal function to Arrow Function</p>
+<p>function add(a, b){
+    return a + b;
+}</p>
+<p>Ans And How</p>
+<p>Ans : a=3; b=5;
+        a+b = 8;
+    How : it's do addition of this arrow function
+</p>
+</div>
+
+<div>
+<h1> Example 4: </h1>
+<p>Identify what is parms and what is args</p>
+<p>function welcome(name){
+    console.log("Welcome " + name);
+}</p>
+<p>welcome("user");</p>
+<p>Ans and why</p>
+<p> Ans : Welcome User
+    How : name is parameter , user is argument 
+</p>
+</div>
+
+<div>
+<h1> Example 5: </h1>
+<p>how many parameters and args</p>
+<p>function temp (a, b, c){
+    console.log(a,b,c);
+}</p>
+<p>temp(1, 2)</p>
+<p> Ans, Err and Why</p>
+<p> Ans : 1 2 Undifiend
+    How : missing 1 argument </p>
+</div>
+
+<div>
+<h1> Example 6: </h1>
+<p>Predict the output</p>
+<p>function temp_user(name = "Guest"){
+    console.log("Hello " + name);
+}</p>
+<p>temp_user();</p>
+<p>Ans, Err and Why</p>
+<p> Ans : Hello Guest
+    Err : No Error
+    How : No Argument passed, consider Default Value </p>
+</div>
+
+<div>
+<h1> Example 7: </h1>
+<p>what is ... operator and why use it  in function</p>
+<p>function number(...numbers){
+    console.log(numbers);
+}</p>
+<p>number(1, 2, 3, 4, 5)</p>
+<p>Ans, Err and why</p>
+<p> Ans : (1, 2, 3, 4, 5)
+    Err : No Error
+    Why : REST Oprator che </p>
+</div>
+
+<div>
+<h1> Example 8: </h1>
+<p>Use rest Parameters to accept any number of scores and return the total</p>
+<p>function calculateTotal(...scores){
+    let total = 0;
+    for(let i=0; i<=scores.length; i++){
+        total += scores[i];
+    }
+    return total;
+}</p>
+<p>function calculateTotal(...scores){
+    let total = 0;
+    scores.forEach(function(val){
+        total = total + val;
+    });
+    return total;
+}</p>
+<p>calculateTotal(10, 20 ,30 ,40 ,50)</p>
+<p>let sumtotal = calculateTotal(10, 20 ,30 ,40 ,50)</p>
+<p>Ans, Err and Why</p>
+<p> Ans : 1 output NaN & , 2 output ia 150
+    Err : 1 Error because of Logical Error, 2 No Error
+    Why : 1 logical error ne lidhe output NaN ave and 2 ma rest parameter che je value add kare che </p>
+</div>
+
+<div>
+<h1> Example 9: </h1>
+<p>Fix the function using early return</p>
+<p>function checkAge(age){
+    if(age < 18){
+        console.log("Too Young");
+    } else {
+        console.log("Access Granted");
+    }
+}</p>
+<p>Ans And how</p>
+<p> Ans : Checkage(16)
+    How : condition True hoy to IF Otherwise Else
+</div>
+
+<div>
+<h1> Example 10: </h1>
+<p>What is the return value of above function</p>
+<p>function f(){ return;}</p>
+<p>Ans and Why</p>
+<p> Ans : Function f() {
+    return;
+}
+    How : Return ni under koi value pass nathi karavni aetle undefault function call thay
+</div>
