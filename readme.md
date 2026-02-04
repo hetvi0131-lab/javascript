@@ -540,6 +540,7 @@ Reason: count-- post-decrement hai — condition me 5 compare hua jo match ho ga
 // You are building a to-do app. Add a new task 'Buy milk' to the tasks array.
 let tasks = ['Wake up', 'Brush teeth'];
 tasks.push("buy milk");
+Ans :  ['Wake up', 'Brush teeth', 'buy milk']
 Why : push thi value add thay
 
 
@@ -547,6 +548,7 @@ Why : push thi value add thay
 // Remove the last notification from the notifications array.
 let notifications = ['Email', 'Message', 'Reminder'];
 notifications.pop();
+Ans : ['Email', 'Message']
 Why : last value remove thay
 
 
@@ -554,6 +556,7 @@ Why : last value remove thay
 // A queue system removes the first customer. Remove the first customer.
 let customers = ['Customer1', 'Customer2', 'Customer3'];
 customers.shift();
+Ans : ['Customer2', 'Customer3']
 Why : remove first value
 
 
@@ -561,6 +564,7 @@ Why : remove first value
 // A new song is added to the beginning of the playlist.
 let playlist = ['Song B', 'Song C'];
 playlist.unshift('song A');
+Ans : ['song A', 'Song B', 'Song C']
 Why : Add first value
 
 
@@ -568,6 +572,7 @@ Why : Add first value
 // In a classroom list, remove 'Alex' and add 'John' and 'Sara' in the same position.
 let students = ['Mike', 'Alex', 'Emma', 'Sophia'];
 students.splice(1, 1, 'john', 'sara');
+Ans : ['Mike', 'john', 'sara', 'Emma', 'Sophia']
 Why : 1 index remove , 1 value remove and add two value 
 
 
@@ -575,6 +580,7 @@ Why : 1 index remove , 1 value remove and add two value
 // From the menu, remove 2 items starting from index 1.
 let menu = ['Burger', 'Pizza', 'Pasta', 'Salad'];
 menu.splice(1, 2);
+Ans : ['Burger', 'Salad']
 Why : 1 index remove and remove 2 value from starting index 1
 
 
@@ -582,6 +588,7 @@ Why : 1 index remove and remove 2 value from starting index 1
 // Create a new array that contains only weekend days.
 let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 let weekday = days.slice(5, 8);
+Ans : ['Saturday', 'Sunday']
 Why : add new array and start first index and end last index
 
 
@@ -589,12 +596,15 @@ Why : add new array and start first index and end last index
 // Reverse the order of levels in a game.
 let levels = ['Easy', 'Medium', 'Hard'];
 levels.reverse();
+Ans : ['Hard', 'Medium', 'Easy']
 Why : use to reverse order
 
 
 // Q9. sort()
 // Sort the scores in ascending order.
 let scores = [45, 12, 78, 34, 89];
+scores.sort();
+Ans : [12, 34, 45, 78, 89]
 Why : value set the assending order
 
 
@@ -604,6 +614,7 @@ let prices = [199, 49, 999, 299, 149];
 let pri = prices.sort(function(a, b){
     return a - b; // ascending order
 })
+Ans : [49, 149, 199, 299, 999]
 Why : create a function to sort lowest to highest prices
 
 
@@ -611,7 +622,8 @@ Why : create a function to sort lowest to highest prices
 // From the array, create a new array of the first 3 items WITHOUT changing the original array.
 let products = ['Laptop', 'Phone', 'Tablet', 'Monitor', 'Keyboard'];
 let pro = products.splice(0, 3);
-Why : remove first 3 array
+Ans : ['Laptop', 'Phone', 'Tablet']
+Why : display first 3 array
 
 
 // Q12. splice() complex
@@ -627,6 +639,7 @@ Why : 2 index remove , 1 value remove and add two value
 // Reverse the array and then add 'Final Step' at the end.
 let steps = ['Step 1', 'Step 2', 'Step 3'];
 steps.reverse(). push('final steps');
+Ans : ['Step 3', 'Step 2', 'Step 1', 'final steps']
 Why : push thi value add thay
 
 
@@ -645,6 +658,7 @@ let movies = ['Avatar', 'Titanic', 'Gladiator'];
 movies.push('Inception')
 movies.shift()
 movies.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+Ans :  ['Gladiator', 'Inception', 'Titanic']
 Why : push add kare, shift first value remove kare, sort value ne accending kare 
 
 
@@ -685,7 +699,7 @@ Why : add new in index 1
 let values = [100, 200, 300, 400, 500];
 let sliced = values.slice(-3, -1);
 Ans : [300, 400]
-Why : 
+Why : nagaive value last value thi calculate thay 
 
 
 // Q24. splice() vs slice() decision
@@ -694,10 +708,9 @@ Why :
 // b) Keep the original array unchanged
 
 
-
-
 // Q25. Chained methods (brain teaser)
 // What is the final value of arr?
 let arr2 = [1, 2, 3];
 arr2.push(arr2.shift());
 Ans :  [2, 3, 1]
+Why : shift thi first value remove kari ppush thi last value add thay
