@@ -14,3 +14,22 @@ let User ={
     email:"test@gmail.com",
     rollno:7
 }
+
+// access (dot vs square notation)
+
+// variable_name.key;
+User.name;
+User.email;
+
+// user.first-name;
+
+// variable_name['key'];
+User['name'];
+
+// user[first_name]
+
+// let demo = "name"
+
+// user[demo] --> convert into name (demo = 'name')
+
+// --> output: abc
