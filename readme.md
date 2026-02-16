@@ -1209,6 +1209,10 @@ let final = arr
 
 console.log(final);
 
+
+<!-- task - 9 -->
+
+
 <!-- JavaScript Core Concepts – Interview Questions (Beginner → Advanced) -->
 # JavaScript Interview Q&A (Beginner to Advanced)
 
