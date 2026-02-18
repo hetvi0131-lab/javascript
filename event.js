@@ -22,7 +22,6 @@ let btn1 = document.querySelector(".btn1");
 btn1.addEventListener("click", ()=>{
 alert("button clicked");
 })
-
 //color change of div tag
 
 let btncolor = document.querySelector(".btn2");
@@ -44,14 +43,76 @@ btncolor.addEventListener("click", () => {
 
 });
 
-
 // input
 // how to know which is typed ?
+
 let inp = document.querySelector("input");
 
 inp.addEventListener("input", (dets) => {
-// console.log(dets);
-if (dets.data !== null) {
-console.log(dets.data);
-}
+  // console.log(dets);
+  if (dets.data !== null) {
+    console.log(dets.data);
+  }
 });
+
+// change -- when you change elements state
+let select = document.querySelector(".sel");
+let device = document.querySelector(".device");
+
+select.addEventListener("change", (dets) => {
+  console.log(dets.target.value);
+  device.textContent = dets.target.value;
+});
+
+// change event => change div color and border color with color input
+
+let box1 = document.querySelector(".outer_box");
+let inp1 = document.querySelector(".color_inp");
+let inp2 = document.querySelector(".border_inp");
+
+inp1.addEventListener("change", (dets)=>{
+    box1.style.backgroundColor = dets.target.value;
+});
+
+  inp2.addEventListener("change", (dets)=>{
+  box1.style.borderColor = dets.target.value;
+});
+
+// submit
+let form = document.querySelector("form");
+
+form.addEventListener("submit", () => {
+  document.body.style.backgroundColor = "red";
+});
+
+// mousemove and mouseout
+let box2 = document.querySelector(".box2");
+
+box2.addEventListener("mousemove", () => {
+  box2.style.backgroundColor = "skyblue";
+  box2.style.width = "300px";
+});
+
+box2.addEventListener("mouseout", () => {
+  box2.style.backgroundColor = "darkgreen";
+  box2.style.width = "100px";
+});
+
+
+// ======================================================
+
+// Event Object:
+// sel.addEventListener("change", (dets) => {
+//     console.log(dets); ==> dets -- that called event object
+// });
+
+// target, type, preventDefault
+// target --> that show element
+// type -->Show Event Type
+// preventDefault --> use for html-form --> prevent form to refresh and clean details
+
+// ------------------------------
+// event delegation ==> daret child par event listener na lagavata
+// only parent par event listner lagavvu
+
+// Event Bubbling and Capturing
